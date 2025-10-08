@@ -20,7 +20,6 @@ export default function Bai3() {
     setLoading(true);
     setError("");
     try {
-      // Sử dụng OMDB API (không cần key thật cho demo)
       const res = await axios.get(
         `https://www.omdbapi.com/?apikey=thewdb&s=${search}`
       );

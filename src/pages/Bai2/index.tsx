@@ -19,7 +19,6 @@ export default function Bai2() {
     setLoading(true);
     setError("");
     try {
-      // Dùng API miễn phí, không cần key
       const res = await axios.get<RatesResponse>(
         `https://open.er-api.com/v6/latest/${baseCurrency}`
       );
