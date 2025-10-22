@@ -91,7 +91,6 @@ export default function App(){
     navigate('/')
   }
 
-  // Memoize helpers to avoid re-renders
   const actions = useMemo(() => ({ createPost, updatePost, deletePost }), [])
 
   return (
